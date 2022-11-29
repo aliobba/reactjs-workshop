@@ -33,7 +33,7 @@ export default function Login() {
 
   const googleAuth = () => {
     window.open(
-      `http://localhost:5000/googleAuth/auth/google/callback`,
+      `https://combative-moccasins-fish.cyclic.app/googleAuth/auth/google/callback`,
       "_self"
     );
   };

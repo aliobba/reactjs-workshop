@@ -11,8 +11,8 @@ export default function Router() {
     return (
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={Users} />
-          <Redirect exact to="/" />
+          <Route exact path="/reactjs-workshop/" component={Users} />
+          <Redirect exact to="/reactjs-workshop/" />
         </Switch>
       </BrowserRouter>
     );
@@ -21,8 +21,8 @@ export default function Router() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Login} />
-        <Redirect exact to="/" />
+        <Route exact path="/reactjs-workshop/" component={Login} />
+        <Redirect exact to="/reactjs-workshop/" />
       </Switch>
     </BrowserRouter>
   );
