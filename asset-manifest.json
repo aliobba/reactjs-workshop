@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.e6c13ad2.css",
-    "main.js": "./static/js/main.fa5b2da9.js",
-    "static/js/787.8376febb.chunk.js": "./static/js/787.8376febb.chunk.js",
-    "static/media/huge.png": "./static/media/huge.f85d5fb255a3a0d8c7c9.png",
-    "index.html": "./index.html",
-    "main.e6c13ad2.css.map": "./static/css/main.e6c13ad2.css.map",
-    "main.fa5b2da9.js.map": "./static/js/main.fa5b2da9.js.map",
-    "787.8376febb.chunk.js.map": "./static/js/787.8376febb.chunk.js.map"
+    "main.css": "./reactjs-workshop/static/css/main.e6c13ad2.css",
+    "main.js": "./reactjs-workshop/static/js/main.f761131c.js",
+    "static/js/787.8376febb.chunk.js": "./reactjs-workshop/static/js/787.8376febb.chunk.js",
+    "static/media/huge.png": "./reactjs-workshop/static/media/huge.f85d5fb255a3a0d8c7c9.png",
+    "index.html": "./reactjs-workshop/index.html",
+    "main.e6c13ad2.css.map": "./reactjs-workshop/static/css/main.e6c13ad2.css.map",
+    "main.f761131c.js.map": "./reactjs-workshop/static/js/main.f761131c.js.map",
+    "787.8376febb.chunk.js.map": "./reactjs-workshop/static/js/787.8376febb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.fa5b2da9.js"
+    "static/js/main.f761131c.js"
   ]
 }
