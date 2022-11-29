@@ -18,27 +18,24 @@ import {
   ImageButton,
   ImageMarked,
 } from "../../components";
-import { GoogleLogin } from "react-google-login";
 import axiosInstance from "../../api/axiosInstance";
 import { useCookies } from "react-cookie";
+import {
+  GoogleOAuthProvider,
+  GoogleLogin,
+  useGoogleLogin,
+  hasGrantedAllScopesGoogle,
+} from "@react-oauth/google";
 
 export default function Login() {
   const [cookies, setCookie] = useCookies(["access_token"]);
   const [open, setOpen] = React.useState(false);
+
   const googleAuth = () => {
     window.open(
-        `http://localhost:5000/googleAuth/auth/google/callback`,
-        "_self"
+      `http://localhost:5000/googleAuth/auth/google/callback`,
+      "_self"
     );
-    /* axiosInstance
-      .get("googleAuth")
-      .then(() => {
-        window.open(
-          `http://localhost:5000/googleAuth/auth/google/callback`,
-          "_self"
-        );
-      })
-      .catch(() => {}); */
   };
 
   return (
@@ -66,7 +63,7 @@ export default function Login() {
             style={{
               width: "30%",
             }}
-            onClick={googleAuth}
+            onClick={() => googleAuth()}
           >
             <ImageSrc style={{ backgroundImage: `url(${huge})` }} />
             <ImageBackdrop className="MuiImageBackdrop-root" />
@@ -82,12 +79,7 @@ export default function Login() {
                   pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
                 }}
               >
-                {/* <GoogleLogin
-                  clientId="93541029152-62o0qca0egrs7ic0jvjr0imm6qhkd7jm.apps.googleusercontent.com"
-                  style={{ opacity: 1 }}
-                  onSuccess={googleResponse}
-                  onFailure={onFailure}
-                /> */}
+                {"Sign in with Google 🚀"}
                 <ImageMarked className="MuiImageMarked-root" />
               </Typography>
             </Image>

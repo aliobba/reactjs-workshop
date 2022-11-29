@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-import { useCookies } from "react-cookie";
+import Cookies from 'js-cookie'
 import Users from "../pages/users";
 import Login from "../pages/login";
 
 export default function Router() {
-  const [cookies] = useCookies(["access_token"]);
+  const access_token = Cookies.get('access_token');
 
-  if (cookies.access_token) {
+  if (access_token) {
     return (
       <BrowserRouter>
         <Switch>
