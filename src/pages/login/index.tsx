@@ -20,12 +20,6 @@ import {
 } from "../../components";
 import axiosInstance from "../../api/axiosInstance";
 import { useCookies } from "react-cookie";
-import {
-  GoogleOAuthProvider,
-  GoogleLogin,
-  useGoogleLogin,
-  hasGrantedAllScopesGoogle,
-} from "@react-oauth/google";
 
 export default function Login() {
   const [cookies, setCookie] = useCookies(["access_token"]);
